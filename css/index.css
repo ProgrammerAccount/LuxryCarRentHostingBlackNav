@@ -1,0 +1,86 @@
+
+@import url('https://fonts.googleapis.com/css?family=Lato|Montserrat:700&display=swap');
+html {
+    overflow-x: hidden;
+}
+
+.welcome {
+    background-image: url("../img/cars/vivaro/reflektor.jpg");
+    background-position: center;
+    /* Center the image */
+    background-size: cover;
+    /* Resize the background image to cover the entire container */
+    height: calc(60vh - 57px);
+    width: 100%;
+    transition: opacity 0.3s ease-in-out;
+    -webkit-transition: opacity 0.3s ease-in-out;
+    -moz-transition: opacity 0.3s ease-in-out;
+    -o-transition: opacity 0.3s ease-in-out;
+}
+
+.textContainer {
+    padding: 30px 25px;
+    position: relative;
+    top: 70%;
+    right: 5px;
+    transform: translateY(-50%);
+    font-family: 'Lato', sans-serif;
+}
+
+.offer img {
+    width: 100vw;
+}
+
+.offerIntroduction {
+    width: 80vw;
+    min-height: calc(40vh - 38px);
+    margin: auto;
+    padding-top: 40px;
+    box-sizing: border-box;
+    font-family: 'Lato';
+    font-size: 18px;
+}
+
+.ofertElement .description h3 {
+    font-family: 'Lato';
+    margin: 0;
+}
+
+.ofertElement .description a {
+    display: block;
+    height: 66px;
+}
+
+.ofertElement .description {
+    margin: auto;
+    width: 80vw;
+    font-family: 'Lato';
+    padding-top: 10px;
+}
+
+.textContainer h1 {
+    font-size: 32px;
+    font-weight: 700;
+    color: white;
+}
+
+.textContainer h1 span {
+    font-size: 18px;
+    font-weight: 300;
+}
+
+
+
+.benefits {
+    padding-left: 10px;
+}
+
+h2{
+    font-family: 'Montserrat',Arial,Helvetica,sans-serif;
+    text-align: center;
+}
+
+ul li {
+    padding: 3px;
+    list-style-image: url("../img/icons/baseline_done_outline_black_18dp.png");
+}

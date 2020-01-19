@@ -1,0 +1,46 @@
+button::-moz-focus-inner {
+    border: 0;
+}
+
+button:focus {
+    outline: 0;
+}
+
+.nav_btn {
+    cursor: pointer;
+    width: 32px;
+    border: 0;
+    border-top: solid white 2px;
+    height: 32px;
+    background: transparent;
+    transition: 300ms transform linear;
+
+}
+
+.nav_btn::before,
+.nav_btn::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    border-top: solid white 2px;
+}
+
+.nav_btn::after {
+    transform: translateY(17px);
+    transition: 300ms transform linear;
+}
+
+.nav_btn::before {
+    transform: translateY(7px)
+}
+
+.nav_btn:focus {
+    transform: rotate(45deg) translateY(5px);
+    border: none;
+}
+
+.nav_btn:focus::after {
+    transform: rotate(-90deg) translateX(-7px);
+}
